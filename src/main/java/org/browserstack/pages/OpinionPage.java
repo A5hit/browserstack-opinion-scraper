@@ -42,6 +42,13 @@ public class OpinionPage {
                 List<WebElement> articles = wait.until(
                         ExpectedConditions.presenceOfAllElementsLocatedBy(ARTICLE_SELECTOR)
                 );
+                
+                // TODO: Add check for minimum articles available
+                if (articles.size() <= i) {
+                    log("Not enough articles found, stopping at %d", articles.size());
+                    break;
+                }
+                
                 WebElement article = articles.get(i);
 
                 String title = extractTitle(article);
@@ -50,14 +57,12 @@ public class OpinionPage {
 
                 safeClick(ARTICLE_LINK_SELECTOR);
 
-
                 waitForContent();
 
                 String content = extractContent();
                 String imageUrl = extractImage();
 
-
-                // ✨ Cleaner, consistent logging
+                // Log article details
                 log("=====================================================");
                 log("[ARTICLE %d]", i + 1);
                 log("Link : %s", driver.getCurrentUrl());
@@ -69,6 +74,23 @@ public class OpinionPage {
                     String safeTitle = title.replaceAll("[^a-zA-Z0-9\\-_]", "_");
                     String uniqueSuffix = UUID.randomUUID().toString().substring(0, 8);
                     String imagePath = String.format("output/images/%02d_%s_%s.jpg", i + 1, safeTitle, uniqueSuffix);
+                    
+                    // Check if image with same title already exists to avoid duplicates
+                    java.nio.file.Path outputDir = java.nio.file.Paths.get("output/images");
+                    if (java.nio.file.Files.exists(outputDir)) {
+                        try {
+                            java.nio.file.Files.list(outputDir)
+                                .filter(path -> path.getFileName().toString().contains(safeTitle))
+                                .findFirst()
+                                .ifPresent(existingPath -> {
+                                    log("Image already exists: %s", existingPath.getFileName());
+                                    return;
+                                });
+                        } catch (IOException e) {
+                            log("Error checking for existing images: %s", e.getMessage());
+                        }
+                    }
+                    
                     try {
                         FileDownloader.download(imageUrl, imagePath);
                         log("Saved   : %s", imagePath);
@@ -81,18 +103,17 @@ public class OpinionPage {
 
                 log("=====================================================");
 
-
                 driver.navigate().back();
-                //Thread.sleep(1000);
-                // Wait again after back navigation
+                // Small delay to let page load - might need adjustment
+                Thread.sleep(500);
                 wait.until(ExpectedConditions.visibilityOfElementLocated(ARTICLE_SELECTOR));
             } catch (Exception e) {
                 log("❌ Error processing article %d: %s", i + 1, e.toString());
                 captureScreenshot(String.format("article_%02d_error", i + 1));
                 e.printStackTrace(System.out);
             }
-
         }
+        
         // Translate all titles after scraping
         List<String> translatedTitles = new ArrayList<>();
         try {
@@ -104,6 +125,7 @@ public class OpinionPage {
         } catch (IOException e) {
             log("Translation failed: " + e.getMessage());
         }
+        
         if (!translatedTitles.isEmpty()) {
             WordFrequencyAnalyzer.analyze(translatedTitles);
         } else {
@@ -121,7 +143,6 @@ public class OpinionPage {
         }
         return "No title found";
     }
-
 
     private void waitForContent() {
         wait.until(driver -> CONTENT_SELECTORS.stream()
@@ -152,7 +173,6 @@ public class OpinionPage {
         }
     }
 
-
     private String truncateContent(String content) {
         if (content.length() > 300) {
             return content.substring(0, 300) + "...";
@@ -165,7 +185,6 @@ public class OpinionPage {
         String message = String.format(format, args);
         System.out.printf("[%s] %s%n", thread, message);
     }
-
 
     private void safeClick(By by) {
         int retries = 3;
@@ -181,6 +200,7 @@ public class OpinionPage {
             }
         }
     }
+    
     private void captureScreenshot(String name) {
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;
@@ -195,6 +215,4 @@ public class OpinionPage {
             log("Screenshot capture failed: %s", ex.getMessage());
         }
     }
-
-
 }

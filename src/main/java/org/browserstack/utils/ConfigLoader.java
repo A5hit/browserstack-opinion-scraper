@@ -20,6 +20,18 @@ public class ConfigLoader {
     }
 
     public static String get(String key) {
+        // First check environment variables
+        String envValue = System.getenv(key.toUpperCase().replace(".", "_"));
+        if (envValue != null && !envValue.trim().isEmpty()) {
+            return envValue;
+        }
+        
+        // Fall back to properties file
         return properties.getProperty(key);
+    }
+    
+    public static String get(String key, String defaultValue) {
+        String value = get(key);
+        return value != null ? value : defaultValue;
     }
 }

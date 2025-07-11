@@ -1,4 +1,4 @@
-package org.browserstack.base;
+package org.browserstack.drivers;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.browserstack.utils.ConfigLoader;
@@ -53,7 +53,7 @@ public class DriverManager {
     private static WebDriver createRemoteDriver(String os, String osVersion, String browser, String browserVersion) {
         try {
             String username = ConfigLoader.get("browserstack.username");
-            String accessKey = ConfigLoader.get("browserstack.accesskey");
+            String accessKey = ConfigLoader.get("browserstack.accessKey");
             String hubUrl = "https://" + username + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub";
 
             DesiredCapabilities caps = new DesiredCapabilities();

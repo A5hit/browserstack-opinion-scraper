@@ -20,7 +20,7 @@ public class WordFrequencyAnalyzer {
         System.out.println("Words repeated more than twice:");
         boolean found = false;
         for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
-            if (entry.getValue() >= 2) {
+            if (entry.getValue() > 2) {
                 System.out.println(entry.getKey() + ": " + entry.getValue());
                 found = true;
             }

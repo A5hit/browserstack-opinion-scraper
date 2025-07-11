@@ -1,8 +1,9 @@
 package org.browserstack.tests;
 
-import org.browserstack.base.DriverManager;
+import org.browserstack.drivers.DriverManager;
 import org.browserstack.pages.HomePage;
 import org.browserstack.pages.OpinionPage;
+import org.browserstack.utils.ConfigLoader;
 import org.browserstack.utils.TranslationService;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
@@ -32,7 +33,7 @@ public class OpinionScraperTest {
         homePage.goToHomePage();
         homePage.acceptCookiesIfPresent();
         homePage.clickOpinionLink();
-        TranslationService translationService = new TranslationService("64677a3b3amshfbfbd7cb30120dfp17798bjsnb22e93cf2ddb");
+        TranslationService translationService = new TranslationService(ConfigLoader.get("translation.apiKey"));
         opinionPage.fetchFirstFiveArticles(translationService);
     }
 
