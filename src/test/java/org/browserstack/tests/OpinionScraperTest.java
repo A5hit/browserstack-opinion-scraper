@@ -5,11 +5,7 @@ import org.browserstack.pages.HomePage;
 import org.browserstack.pages.OpinionPage;
 import org.browserstack.utils.TranslationService;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
-
-import java.io.IOException;
+import org.testng.annotations.*;
 
 
 public class OpinionScraperTest {
@@ -19,12 +15,17 @@ public class OpinionScraperTest {
     private OpinionPage opinionPage;
 
     @BeforeClass
-    public void setUp()  {
-        driver = DriverManager.getDriver();
+    @Parameters({"os", "osVersion", "browser", "browserVersion"})
+    public void setUp(
+            @Optional String os,
+            @Optional String osVersion,
+            @Optional String browser,
+            @Optional String browserVersion) {
+        driver = DriverManager.getDriver(os, osVersion, browser, browserVersion);
         homePage = new HomePage(driver);
         opinionPage = new OpinionPage(driver);
-
     }
+
 
     @Test
     public void testScrapeOpinionArticles() {
