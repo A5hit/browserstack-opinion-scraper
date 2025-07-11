@@ -33,14 +33,19 @@ This project successfully implements all requirements from the technical assignm
    cd browserstack-opinion-scraper
    ```
 
-2. **Configure credentials** in `src/main/resources/config.properties`:
-   ```properties
-   # BrowserStack credentials
-   browserstack.username=your_browserstack_username
-   browserstack.accessKey=your_browserstack_access_key
-   
-   # Translation API
-   translation.apiKey=your_rapidapi_key
+2. **Configure credentials** using one of these methods:
+
+   **Option A: Environment Variables (Recommended)**
+   ```bash
+   export BROWSERSTACK_USERNAME=your_browserstack_username
+   export BROWSERSTACK_ACCESS_KEY=your_browserstack_access_key
+   export TRANSLATION_API_KEY=your_rapidapi_key
+   ```
+
+   **Option B: Local Config File**
+   ```bash
+   cp src/main/resources/config.properties.template src/main/resources/config.properties
+   # Edit the file with your actual credentials
    ```
 
 3. **Run the tests**
@@ -94,6 +99,9 @@ src/
 ```
 
 ## 🔧 Configuration
+
+### 🔒 Security Note
+This project uses environment variables to protect sensitive credentials. The `config.properties` file is excluded from Git to prevent exposing API keys and credentials.
 
 ### BrowserStack Setup
 1. Create a free account at [BrowserStack](https://www.browserstack.com/)

@@ -10,12 +10,13 @@ public class ConfigLoader {
     static {
         try (InputStream input = ConfigLoader.class.getClassLoader()
                 .getResourceAsStream("config.properties")) {
-            if (input == null) {
-                throw new RuntimeException("config.properties not found in resources.");
+            if (input != null) {
+                properties.load(input);
+            } else {
+                System.out.println("Warning: config.properties not found. Using environment variables only.");
             }
-            properties.load(input);
         } catch (IOException e) {
-            throw new RuntimeException("Failed to load configuration: " + e.getMessage());
+            System.out.println("Warning: Failed to load config.properties: " + e.getMessage() + ". Using environment variables only.");
         }
     }
 

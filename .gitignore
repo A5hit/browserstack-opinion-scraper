@@ -38,3 +38,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### Configuration Files with Sensitive Data ###
+src/main/resources/config.properties
+src/test/resources/config.properties
+*.env
+.env.local
+.env.production
