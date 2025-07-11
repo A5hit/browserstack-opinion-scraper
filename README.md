@@ -34,13 +34,25 @@ Used RapidAPI's translation service to convert Spanish titles to English for bet
 ## Setup Instructions
 
 1. **Clone the repository**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/browserstack-opinion-scraper.git
+   cd browserstack-opinion-scraper
+   ```
+
 2. **Configure credentials** in `src/main/resources/config.properties`:
    - Add your BrowserStack username and access key
    - Add your RapidAPI translation key
+
 3. **Run the tests**:
    ```bash
    mvn clean test
    ```
+
+## GitHub Repository
+
+This project is available on GitHub: [browserstack-opinion-scraper](https://github.com/YOUR_USERNAME/browserstack-opinion-scraper)
+
+**Note**: Replace `YOUR_USERNAME` with your actual GitHub username in the URLs above.
 
 ## Project Structure
 
