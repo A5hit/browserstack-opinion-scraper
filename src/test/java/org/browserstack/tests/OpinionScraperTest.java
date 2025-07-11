@@ -3,6 +3,7 @@ package org.browserstack.tests;
 import org.browserstack.base.DriverManager;
 import org.browserstack.pages.HomePage;
 import org.browserstack.pages.OpinionPage;
+import org.browserstack.utils.TranslationService;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -18,7 +19,7 @@ public class OpinionScraperTest {
     private OpinionPage opinionPage;
 
     @BeforeClass
-    public void setUp() throws IOException {
+    public void setUp()  {
         driver = DriverManager.getDriver();
         homePage = new HomePage(driver);
         opinionPage = new OpinionPage(driver);
@@ -30,7 +31,8 @@ public class OpinionScraperTest {
         homePage.goToHomePage();
         homePage.acceptCookiesIfPresent();
         homePage.clickOpinionLink();
-        opinionPage.fetchFirstFiveArticles();
+        TranslationService translationService = new TranslationService("64677a3b3amshfbfbd7cb30120dfp17798bjsnb22e93cf2ddb");
+        opinionPage.fetchFirstFiveArticles(translationService);
     }
 
     @AfterClass

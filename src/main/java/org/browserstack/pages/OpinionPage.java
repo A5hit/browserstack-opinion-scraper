@@ -1,6 +1,7 @@
 package org.browserstack.pages;
 
 import org.browserstack.utils.FileDownloader;
+import org.browserstack.utils.TranslationService;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -16,8 +17,9 @@ public class OpinionPage {
     // Centralize all selectors here
     private static final By ARTICLE_SELECTOR = By.cssSelector("article");
     private static final By ARTICLE_LINK_SELECTOR = By.xpath(".//h2//a");
-
     private static final By IMAGE_SELECTOR = By.xpath("//figure[@class='a_m a_m-h ']/descendant::img");
+
+    private final List<String> scrapedTitles = new java.util.ArrayList<>();
 
     private static final List<By> CONTENT_SELECTORS = List.of(
             By.cssSelector(".a_c.clearfix"),
@@ -30,7 +32,7 @@ public class OpinionPage {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
-    public void fetchFirstFiveArticles() {
+    public void fetchFirstFiveArticles(TranslationService translationService) {
         int count = 5;
 
         for (int i = 0; i < count; i++) {
@@ -41,6 +43,7 @@ public class OpinionPage {
                 WebElement article = articles.get(i);
 
                 String title = extractTitle(article);
+                scrapedTitles.add(title);
                 log("Processing article: " + title);
 
                 WebElement link = article.findElement(ARTICLE_LINK_SELECTOR);
@@ -83,6 +86,17 @@ public class OpinionPage {
             } catch (Exception e) {
                 log("Error processing article %d: %s", i + 1, e.getMessage());
             }
+
+        }
+        // Translate all titles after scraping
+        try {
+            List<String> translatedTitles = translationService.translateToEnglish(scrapedTitles);
+            log("Translated Titles:");
+            for (String translated : translatedTitles) {
+                log(" - " + translated);
+            }
+        } catch (IOException e) {
+            log("Translation failed: " + e.getMessage());
         }
     }
 
