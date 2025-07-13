@@ -35,6 +35,7 @@ public class OpinionPage {
 
     public void fetchFirstFiveArticles(TranslationService translationService) {
         List<String> scrapedTitles = new ArrayList<>();
+        List<String> failedArticles = new ArrayList<>();
         int count = 5;
 
         for (int i = 0; i < count; i++) {
@@ -42,27 +43,26 @@ public class OpinionPage {
                 List<WebElement> articles = wait.until(
                         ExpectedConditions.presenceOfAllElementsLocatedBy(ARTICLE_SELECTOR)
                 );
-                
-                // TODO: Add check for minimum articles available
+
                 if (articles.size() <= i) {
                     log("Not enough articles found, stopping at %d", articles.size());
                     break;
                 }
-                
+
                 WebElement article = articles.get(i);
 
                 String title = extractTitle(article);
                 scrapedTitles.add(title);
                 log("Processing article: " + title);
 
-                safeClick(ARTICLE_LINK_SELECTOR);
+                // Use safeClick with article-specific scope
+                safeClick(article);
 
                 waitForContent();
 
                 String content = extractContent();
                 String imageUrl = extractImage();
 
-                // Log article details
                 log("=====================================================");
                 log("[ARTICLE %d]", i + 1);
                 log("Link : %s", driver.getCurrentUrl());
@@ -74,47 +74,50 @@ public class OpinionPage {
                     String safeTitle = title.replaceAll("[^a-zA-Z0-9\\-_]", "_");
                     String uniqueSuffix = UUID.randomUUID().toString().substring(0, 8);
                     String imagePath = String.format("output/images/%02d_%s_%s.jpg", i + 1, safeTitle, uniqueSuffix);
-                    
-                    // Check if image with same title already exists to avoid duplicates
+
+                    boolean alreadyExists = false;
                     java.nio.file.Path outputDir = java.nio.file.Paths.get("output/images");
+
                     if (java.nio.file.Files.exists(outputDir)) {
                         try {
-                            java.nio.file.Files.list(outputDir)
-                                .filter(path -> path.getFileName().toString().contains(safeTitle))
-                                .findFirst()
-                                .ifPresent(existingPath -> {
-                                    log("Image already exists: %s", existingPath.getFileName());
-                                    return;
-                                });
+                            alreadyExists = java.nio.file.Files.list(outputDir)
+                                    .anyMatch(path -> path.getFileName().toString().contains(safeTitle));
+                            if (alreadyExists) {
+                                log("Image already exists: %s", safeTitle);
+                            }
                         } catch (IOException e) {
                             log("Error checking for existing images: %s", e.getMessage());
                         }
                     }
-                    
-                    try {
-                        FileDownloader.download(imageUrl, imagePath);
-                        log("Saved   : %s", imagePath);
-                    } catch (IOException e) {
-                        log("❌ Failed to download image for article %d: %s", i + 1, e.toString());
+
+                    if (!alreadyExists) {
+                        try {
+                            FileDownloader.download(imageUrl, imagePath);
+                            log("Saved   : %s", imagePath);
+                        } catch (IOException e) {
+                            log("❌ Failed to download image for article %d: %s", i + 1, e.toString());
+                            failedArticles.add(String.format("Article %d image download failed: %s", i + 1, e.getMessage()));
+                        }
+                    } else {
+                        log("Saved   : [skipped]");
                     }
                 } else {
-                    log("Saved   : [skipped]");
+                    log("Saved   : [skipped - no image]");
                 }
 
                 log("=====================================================");
 
                 driver.navigate().back();
-                // Small delay to let page load - might need adjustment
                 Thread.sleep(500);
                 wait.until(ExpectedConditions.visibilityOfElementLocated(ARTICLE_SELECTOR));
             } catch (Exception e) {
                 log("❌ Error processing article %d: %s", i + 1, e.toString());
                 captureScreenshot(String.format("article_%02d_error", i + 1));
-                e.printStackTrace(System.out);
+                failedArticles.add(String.format("Article %d scraping failed: %s", i + 1, e.getMessage()));
             }
         }
-        
-        // Translate all titles after scraping
+
+        // Translate titles after all scraping
         List<String> translatedTitles = new ArrayList<>();
         try {
             translatedTitles = translationService.translateToEnglish(scrapedTitles);
@@ -125,13 +128,19 @@ public class OpinionPage {
         } catch (IOException e) {
             log("Translation failed: " + e.getMessage());
         }
-        
+
         if (!translatedTitles.isEmpty()) {
             WordFrequencyAnalyzer.analyze(translatedTitles);
         } else {
             log("Skipping analysis because translation failed.");
         }
+
+        // If any errors occurred, fail the test
+        if (!failedArticles.isEmpty()) {
+            throw new RuntimeException("One or more articles failed:\n" + String.join("\n", failedArticles));
+        }
     }
+
 
     private String extractTitle(WebElement article) {
         List<By> titleSelectors = List.of(By.tagName("h2"), By.tagName("h1"), By.tagName("h3"));
@@ -186,13 +195,14 @@ public class OpinionPage {
         System.out.printf("[%s] %s%n", thread, message);
     }
 
-    private void safeClick(By by) {
+    private void safeClick(WebElement article) {
         int retries = 3;
         while (retries > 0) {
             try {
-                WebElement element = wait.until(ExpectedConditions.elementToBeClickable(by));
-                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
-                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
+                WebElement link = article.findElement(ARTICLE_LINK_SELECTOR);
+                wait.until(ExpectedConditions.elementToBeClickable(link));
+                ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", link);
+                ((JavascriptExecutor) driver).executeScript("arguments[0].click();", link);
                 return; // success
             } catch (StaleElementReferenceException e) {
                 retries--;
@@ -200,7 +210,8 @@ public class OpinionPage {
             }
         }
     }
-    
+
+
     private void captureScreenshot(String name) {
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;

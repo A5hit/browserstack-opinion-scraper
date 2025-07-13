@@ -1,0 +1,566 @@
+05:31:49.548 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is null. We currently support frameworks testng, cucumber-testng & serenity
+05:31:50.084 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/45hit/.browserstack already exist
+05:31:50.086 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: /Users/45hit/.browserstack/cli/binary-macos-x64
+05:31:52.586 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.measure(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.end(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.a(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.onStart(Unknown Source)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:242)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:310)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+05:32:17.473 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:17.475 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:17.475 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:17.475 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.666 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.667 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.668 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.668 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.668 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.669 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.669 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.670 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.679 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.679 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.679 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.680 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.680 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.681 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.682 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.682 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.682 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.684 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.684 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.685 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.686 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.686 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.687 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.687 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.699 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.701 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.701 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.702 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.705 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.765 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.766 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.766 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.767 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.767 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.768 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:20.768 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:22.000 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:22.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:22.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:22.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.982 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.984 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.985 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.985 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.986 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.986 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.987 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.987 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.993 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.993 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.993 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.993 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.994 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.994 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.995 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.995 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.996 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.999 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:23.999 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.000 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.002 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.003 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.005 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.005 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.006 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.006 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.007 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.007 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.007 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.007 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.015 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.017 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.018 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.920 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.921 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.921 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:24.922 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.041 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.048 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.049 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.049 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.050 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.050 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.050 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.051 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.061 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.062 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.063 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.064 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.065 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.066 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.066 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.066 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.067 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.068 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.068 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.068 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.069 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.069 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.070 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.070 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.071 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.071 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.071 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.071 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.072 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.073 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.073 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.073 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.073 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.074 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.074 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.074 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.717 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.717 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.718 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:27.718 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.716 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.721 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.722 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.722 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.722 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.723 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.723 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.723 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.731 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.732 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.732 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.733 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.733 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.733 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.733 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.734 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.734 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.735 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.735 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.735 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.736 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.736 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.737 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.737 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.738 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.738 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.739 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.739 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.740 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.741 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.742 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:34.743 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:35.562 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:35.563 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:35.563 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:35.565 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.837 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.837 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.838 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.838 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.838 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.838 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.839 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.839 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.846 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.846 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.846 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.846 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.847 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.847 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.847 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.847 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.848 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.848 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.848 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.849 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.849 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.849 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.849 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.849 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.849 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.850 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.850 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.850 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.850 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.850 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.851 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:42.851 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.878 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.880 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.881 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.881 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.882 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.882 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.882 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.882 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.883 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.883 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.883 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.883 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.884 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.884 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.884 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.884 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.885 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.885 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.885 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.885 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.885 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.886 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.886 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.886 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.888 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:44.888 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:32:45.534 [main] DEBUG c.b.utils.FunnelInstrumentation - Error in getting Product:
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.browserstack.config.BrowserStackConfig.getFramework()" is null
+	at com.browserstack.utils.FunnelInstrumentation.a(Unknown Source)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at com.browserstack.utils.FunnelInstrumentation.getProducts(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:873)
+	at org.testng.TestRunner.afterRun(TestRunner.java:828)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:32:45.555 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+05:32:45.578 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+05:32:45.622 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"bf21e6c5-173a-4320-8cb0-4ba48e05ec16","buildIdentifier":"unknown","testhub_uuid":"","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"192.168.0.104","measures":{"sdk:pre-test":0.019998997449874878},"productUsage":{"testObservability":{"buildHashedId":"","manuallySet":false,"enabled":false}},"browserStackConfig":{"browserstackLocal":null,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"skipSessionStatus":false,"serenityOverridePlugin":false,"skipSessionName":false},"platforms":null,"parallelsPerPlatform":null,"framework":null,"accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":null,"percyBuildId":null,"product":"[automate]","buildName":"unknown","os":"Mac OS X","languageVersion":"17.0.11","appiumVersion":"null","frameworkDetectionInstrumentation":{},"detectedDependencies":"","referrer":"unknown","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"unknown","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.18.1","automationFramework":"selenium","seleniumVersion":"null"}}
+05:32:45.922 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"Unauthorized"}
+05:40:19.962 [main] WARN  c.b.config.BrowserStackConfig - Test Observability could not be enabled because framework detected is null. We currently support frameworks testng, cucumber-testng & serenity
+05:40:20.489 [main] DEBUG com.browserstack.v2.SdkCliUtils - File /Users/45hit/.browserstack already exist
+05:40:20.492 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: /Users/45hit/.browserstack/cli/binary-macos-x64
+05:40:22.994 [main] ERROR com.browserstack.v2.SdkCliUtils - Error in setting up cli path directory, Exception: Unexpected token END OF FILE at position 0.
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at browserstack.shaded.org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.checkAndUpdateCli(Unknown Source)
+	at com.browserstack.v2.SdkCliUtils.setupCliPath(Unknown Source)
+	at com.browserstack.v2.SdkCLI.<clinit>(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.measure(Unknown Source)
+	at com.browserstack.monitoring.PerformanceTester.end(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.a(Unknown Source)
+	at com.browserstack.testNgListeners.BrowserstackSuiteListener.onStart(Unknown Source)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:242)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:310)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+05:40:41.250 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:41.253 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:41.253 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:41.253 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.985 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.986 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.987 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.987 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.988 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.988 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.990 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:44.990 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.000 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.001 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.004 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.005 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.005 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.006 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.007 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.008 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.008 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.009 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.010 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.010 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.011 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.011 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.012 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.159 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.159 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.159 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.160 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.160 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.160 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.161 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.161 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.836 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.837 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.837 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:45.838 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.581 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.581 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.582 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.583 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.584 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.586 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.586 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.587 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.970 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.970 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.971 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.971 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.972 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.972 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.972 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.973 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.974 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.974 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.975 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.976 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.976 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.977 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.977 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:47.978 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.097 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.097 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.098 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.098 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.099 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.099 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.100 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.100 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.864 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.870 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.870 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:48.870 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.910 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.910 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.910 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.911 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.911 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.911 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.912 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.912 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.920 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.920 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.920 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.921 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.921 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.921 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.922 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.922 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.922 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.922 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.922 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.923 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.923 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.923 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.924 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:49.924 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.135 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.136 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.136 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.136 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.137 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.137 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.137 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.137 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.825 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.828 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.828 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:50.828 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.438 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.441 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.441 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.442 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.442 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.442 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.442 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.443 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.448 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.449 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.449 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.449 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.450 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.450 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.450 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.450 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.451 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.451 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.451 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.451 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.452 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.452 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.452 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.453 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.453 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.453 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.453 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.454 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.454 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.454 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.454 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:58.454 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:59.144 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:59.145 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:59.145 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:40:59.145 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.857 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.864 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.878 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.878 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.878 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.879 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.879 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.879 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.915 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.916 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.916 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.916 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.917 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.919 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.920 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.924 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.925 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.925 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.925 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.926 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.926 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.926 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.927 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.927 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.927 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.927 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.928 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.928 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.928 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.928 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.929 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:08.929 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.654 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.655 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.655 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.655 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.657 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.658 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.658 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.658 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.658 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.659 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.659 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.659 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.659 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.659 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.660 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.660 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.660 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.660 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.660 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.661 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.661 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.661 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.661 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.661 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.663 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:10.664 [main] DEBUG c.browserstack.utils.CurrentTestMap - Searching for Test Run ID for Thread: 1
+05:41:11.132 [main] DEBUG c.b.utils.FunnelInstrumentation - Error in getting Product:
+java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because the return value of "com.browserstack.config.BrowserStackConfig.getFramework()" is null
+	at com.browserstack.utils.FunnelInstrumentation.a(Unknown Source)
+	at java.base/java.util.stream.MatchOps$1MatchSink.accept(MatchOps.java:90)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:1002)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:129)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:527)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:513)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:230)
+	at java.base/java.util.stream.MatchOps$MatchOp.evaluateSequential(MatchOps.java:196)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.anyMatch(ReferencePipeline.java:632)
+	at com.browserstack.utils.FunnelInstrumentation.getProducts(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.createParamsForEvent(Unknown Source)
+	at com.browserstack.utils.FunnelInstrumentation.sendSDKEvent(Unknown Source)
+	at com.browserstack.testNgListeners.TmpSuiteListener.onFinish(Unknown Source)
+	at org.testng.TestRunner.fireEvent(TestRunner.java:873)
+	at org.testng.TestRunner.afterRun(TestRunner.java:828)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+05:41:11.149 [main] DEBUG c.b.utils.FrameworkDetectionUtils - Couldn't find dependency class: appium
+05:41:11.173 [main] DEBUG com.browserstack.testOps.UsageStats - getFormattedData: Collecting data for TestObservability
+05:41:11.206 [main] DEBUG c.b.utils.FunnelInstrumentation - Sending funnel data for SDKTestSuccessful with data: {"event_type":"SDKTestSuccessful","accessKey":"[REDACTED]","userName":"[REDACTED]","event_properties":{"isPercyAutoEnabled":false,"language":"java","sdkRunId":"bc07c164-c8cc-4a61-ad94-64d136ba06fb","buildIdentifier":"unknown","testhub_uuid":"","detectedAppiumVersion":"null","productMap":{"app_automate":false,"accessibility":null,"automate":true,"percy":false,"observability":false,"turboscale":false},"hostname":"192.168.0.104","measures":{"sdk:pre-test":0.024170994758605957},"productUsage":{"testObservability":{"buildHashedId":"","manuallySet":false,"enabled":false}},"browserStackConfig":{"browserstackLocal":null,"percy":false,"logLevel":"info","staticWebDriver":true,"autoDetectFramework":true,"percyCaptureMode":"AUTO","browserStackLocalOptions":null,"percyOptions":null,"testContextOptions":{"serenityOverridePlugin":false,"skipSessionName":false,"skipSessionStatus":false},"platforms":null,"parallelsPerPlatform":null,"framework":null,"accessibility":false,"accessibilityOptions":{},"turboScaleOptions":{},"disableAutoCaptureLogs":true,"testObservability":true,"browserstackAutomation":true,"turboScale":false,"testObservabilityOptions":{},"gradleMConfig":null,"proxySettings":null},"automationFrameworkVersion":null,"percyBuildId":null,"product":"[automate]","buildName":"unknown","os":"Mac OS X","languageVersion":"17.0.11","appiumVersion":"null","frameworkDetectionInstrumentation":{},"detectedDependencies":"","referrer":"unknown","locationTrigger":"onFinish","accessibilityConfiguration":{"pollingTimeout":30},"language_framework":"unknown","testOrchestration":{"abortBuildOnFailure":{"enabled":false},"retryTestsOnFailure":{"enabled":false},"userConfig":{}},"detectedSeleniumVersion":"4.18.1","automationFramework":"selenium","seleniumVersion":"null"}}
+05:41:11.501 [main] DEBUG c.b.utils.FunnelInstrumentation - API Event SDKTestSuccessful, response: {"message":"Unauthorized"}

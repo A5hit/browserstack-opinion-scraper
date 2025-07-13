@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BrowserStackSDKSuite" parallel="tests" thread-count="5">
+    <test name="BrowserStack SDK">
+        <classes>
+            <class name="org.browserstack.tests.OpinionScraperTest"/>
+        </classes>
+    </test>
+</suite>

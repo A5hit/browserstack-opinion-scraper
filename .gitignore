@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 output/screenshots
 output/images
+browserstack.yml
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

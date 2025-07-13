@@ -33,28 +33,17 @@ This project successfully implements all requirements from the technical assignm
    cd browserstack-opinion-scraper
    ```
 
-2. **Configure credentials** using one of these methods:
-
-   **Option A: Environment Variables (Recommended)**
+2. **Configure BrowserStack credentials** using environment variables:
    ```bash
    export BROWSERSTACK_USERNAME=your_browserstack_username
    export BROWSERSTACK_ACCESS_KEY=your_browserstack_access_key
    export TRANSLATION_API_KEY=your_rapidapi_key
    ```
 
-   **Option B: Local Config File**
-   ```bash
-   cp src/main/resources/config.properties.template src/main/resources/config.properties
-   # Edit the file with your actual credentials
-   ```
-
 3. **Run the tests**
    ```bash
-   # Local testing
-   mvn clean test -Drun.mode=local
-   
-   # BrowserStack testing (5 parallel threads)
-   mvn clean test -Drun.mode=remote
+   # Run tests with BrowserStack Java SDK (5 parallel threads)
+   mvn clean test
    ```
 
 ## 🏗️ Project Architecture
@@ -64,7 +53,6 @@ This project successfully implements all requirements from the technical assignm
 - **OpinionPage**: Manages article scraping, content extraction, and image downloads
 
 ### Utility Classes
-- **DriverManager**: Manages WebDriver instances for local and BrowserStack execution
 - **TranslationService**: Integrates with RapidAPI for Spanish to English translation
 - **WordFrequencyAnalyzer**: Analyzes word frequency in translated titles
 - **FileDownloader**: Handles image downloads with unique naming
@@ -72,15 +60,13 @@ This project successfully implements all requirements from the technical assignm
 
 ### Test Framework
 - **TestNG**: Test execution framework with parallel support
-- **BrowserStack Integration**: Cross-browser testing across 5 parallel threads
+- **BrowserStack Java SDK**: Automatic driver management and cross-browser testing
 
 ## 📁 Project Structure
 
 ```
 src/
 ├── main/java/org/browserstack/
-│   ├── drivers/          # WebDriver management
-│   │   └── DriverManager.java
 │   ├── pages/           # Page Object classes
 │   │   ├── HomePage.java
 │   │   └── OpinionPage.java
@@ -95,6 +81,7 @@ src/
     ├── java/org/browserstack/tests/
     │   └── OpinionScraperTest.java
     └── resources/
+        ├── browserstack.yml          # BrowserStack configuration
         └── BrowserStackParallelSuite.xml
 ```
 
@@ -119,20 +106,21 @@ This project uses environment variables to protect sensitive credentials. The `c
 
 ## 🧪 Test Execution
 
-### Local Testing
+### Test Execution
 ```bash
-mvn clean test -Drun.mode=local
-```
-
-### BrowserStack Testing
-```bash
-mvn clean test -Drun.mode=remote
+mvn clean test
 ```
 
 ### Parallel Test Configuration
 The project runs 5 parallel tests across:
 - **Desktop Browsers**: Chrome, Firefox, Edge on Windows 11
-- **Mobile Browsers**: Safari on iOS 16, Chrome on Android 12
+- **Mobile Browsers**: Safari on iOS 15, Chrome on Android 12
+
+The BrowserStack Java SDK automatically handles:
+- Driver creation and management
+- Parallel test execution
+- Session management
+- Test reporting and observability
 
 ## 📊 Output
 
