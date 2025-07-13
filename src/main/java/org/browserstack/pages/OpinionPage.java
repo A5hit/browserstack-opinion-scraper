@@ -107,9 +107,24 @@ public class OpinionPage {
 
                 log("=====================================================");
 
-                driver.navigate().back();
-                Thread.sleep(500);
-                wait.until(ExpectedConditions.visibilityOfElementLocated(ARTICLE_SELECTOR));
+                // Navigate back and ensure articles are visible
+                boolean success = false;
+                int retries = 3;
+                while (retries > 0 && !success) {
+                    try {
+                        driver.navigate().back();
+                        Thread.sleep(1000); // allow for navigation
+                        new WebDriverWait(driver, Duration.ofSeconds(15))
+                                .until(ExpectedConditions.visibilityOfElementLocated(ARTICLE_SELECTOR));
+                        success = true;
+                    } catch (TimeoutException te) {
+                        retries--;
+                        if (retries == 0) {
+                            throw te;
+                        }
+                    }
+                }
+
             } catch (Exception e) {
                 log("❌ Error processing article %d: %s", i + 1, e.toString());
                 captureScreenshot(String.format("article_%02d_error", i + 1));
